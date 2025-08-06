@@ -7,7 +7,11 @@
 </el-form-item>
 
 <el-form-item label="版本code">
-  <el-input v-model="form.versionCode" />
+  <el-input
+    v-model.number="form.versionCode"
+    type="number"
+    oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+  />
 </el-form-item>
 
 <el-form-item label="下载地址">
