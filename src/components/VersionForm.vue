@@ -43,7 +43,7 @@ const emit = defineEmits(['update:visible', 'submit'])
 const visible = ref(false)
 const form = ref({
   versionName: '',
-  versionCodeo: 0,
+  versionCode: 0,
   downLoadUrl: false,
   isMust: '',
   updateDes: ''
