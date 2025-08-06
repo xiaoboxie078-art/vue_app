@@ -1,15 +1,19 @@
 <template>
   <el-dialog v-model="visible" title="版本信息" width="500px">
     <el-form :model="form" label-width="100px">
+
      <el-form-item label="版本号">
   <el-input v-model="form.versionName" />
 </el-form-item>
+
 <el-form-item label="版本code">
-  <input v-model="form.versionCode" />
+  <el-input v-model="form.versionCode" />
 </el-form-item>
+
 <el-form-item label="下载地址">
   <el-input v-model="form.downLoadUrl" />
 </el-form-item>
+
 <el-form-item label="强制更新">
   <el-switch v-model="form.isMust" />
 </el-form-item>
@@ -39,7 +43,7 @@ const emit = defineEmits(['update:visible', 'submit'])
 const visible = ref(false)
 const form = ref({
   versionName: '',
-  platversionCodeorm: '',
+  versionCodeo: 0,
   downLoadUrl: false,
   isMust: '',
   updateDes: ''
